@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Download, MapPin } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
@@ -182,23 +183,30 @@ export function AboutSection() {
             </div>
 
             <div className="mt-8">
-              <Button
-                className="
-                  gradient-button
-                  text-white
-                  border-0
-                  px-8 py-6
-                  text-base font-medium
-                  rounded-full
-                  transition-all duration-300
-                  hover:opacity-90
-                  hover:scale-105
-                  cosmic-glow
-                "
+              <Link
+                href="/Resume_MANCILLA.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Download className="w-4 h-4 mr-2" />
-                Download Resume
-              </Button>
+                <Button
+                  className="
+                    gradient-button
+                    text-white
+                    border-0
+                    px-8 py-6
+                    text-base font-medium
+                    rounded-full
+                    transition-all duration-300
+                    hover:opacity-90
+                    hover:scale-105
+                    cosmic-glow
+                  "
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  Download Resume
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
