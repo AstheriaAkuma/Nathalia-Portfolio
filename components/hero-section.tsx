@@ -63,22 +63,21 @@
           )}
         >
           {/* Greeting - always visible */}
-          <p className="text-xl sm:text-2xl text-muted-foreground mb-6 max-w-2xl mx-auto text-pretty font-medium">
+          <p className="text-lg sm:text-2xl text-muted-foreground mb-6 max-w-2xl mx-auto text-pretty font-medium">
             Bold design choices, grounded in usability.
           </p>
 
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-0 tracking-tight text-balance">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-0 tracking-tight text-balance">
             {"Hi, I'm Nathalia "}
           </h1>
 
-          <div className="relative h-[4.5rem] sm:h-[5.5rem] md:h-[6.5rem] lg:h-[7.5rem] mx-auto mb-12">
+          <div className="relative min-h-[3rem] sm:h-[5.5rem] md:h-[6.5rem] lg:h-[7.5rem] mx-auto mb-12">
             <p
               className={cn(
                 "gradient-text",
                 "flex items-center justify-center",
-                "whitespace-nowrap",
-                "text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold",
-                "min-h-full"
+                "whitespace-normal sm:whitespace-nowrap",
+                "text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold",                "min-h-full"
               )}
             >
               {displayedText}

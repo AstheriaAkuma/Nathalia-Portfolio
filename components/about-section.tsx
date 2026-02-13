@@ -136,7 +136,7 @@ export function AboutSection() {
         {/* About Hero */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
           {/* Image */}
-          <div className="relative order-2 lg:order-1">
+          <div className="lg:order-2">
             <div
               onClick={() => setIsColored(!isColored)}
               className="relative aspect-[4/5] rounded-2xl overflow-hidden glass cursor-pointer group"
@@ -228,7 +228,7 @@ export function AboutSection() {
             {experiences.map((exp, index) => (
               <div
                 key={exp.company}
-                className={`relative flex flex-col md:flex-row gap-8 mb-[-6rem] last:mb-0 ${
+                className={`relative flex flex-col md:flex-row gap-8 mb-16 md:mb-[-6rem] last:mb-0 ${
                   index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                 }`}
               >
