@@ -61,7 +61,10 @@ export function ContactSection() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group glass rounded-xl px-6 py-4 flex items-center gap-4 hover:cosmic-glow transition-all duration-500 w-full sm:w-auto"
+                className="group rounded-xl px-6 py-4 flex items-center gap-4 
+                    w-full sm:w-auto
+                    bg-white/5 backdrop-blur-xl border border-white/10
+                    hover:cosmic-glow transition-all duration-500"
               >
                 <div className="w-10 h-10 rounded-lg bg-[#591DA9]/20 flex items-center justify-center">
                   <link.icon className="w-5 h-5 text-[#CB98ED]" />
