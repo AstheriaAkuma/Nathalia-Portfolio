@@ -15,26 +15,27 @@ const experiences = [
     location: "Manila, PH",
     period: "Oct 2025 – Dec 2025",
     description:
-      "Worked on backend-driven proof-of-concepts and real-time systems by integrating cloud services with web and mobile interfaces.",
+      "Built AI-powered proof-of-concepts and real-time systems by integrating Next.js applications with AWS services and modern AI models.",
     highlights: [
-      "Built a proof-of-concept JSON formatter using AWS Bedrock with backend logic and a simple frontend interface",
-      "Developed a technician monitoring system with real-time updates using AWS Kinesis and WebRTC",
+      "Developed an AI-enhanced interior design catalog using Next.js with a chatbot interface for product matching and synthetic image generation",
+      "Engineered an AI-powered JSON formatter using AWS Bedrock and Next.js, optimizing large-scale data structures and deploying via Vercel",
+      "Architected a real-time technician monitoring system connecting React Native and Next.js using AWS Kinesis and WebRTC, integrating GPT-4o mini for video analysis",
     ],
-    tools: ["AWS Bedrock", "AWS Kinesis", "WebRTC", "OpenAI", "Gemini", "JavaScript"],
+    tools: ["Next.js", "AWS Bedrock", "AWS Kinesis", "WebRTC", "GPT-4o mini", "Vercel", "JavaScript"],
     accent: "#7c3aed",
   },
   {
     company: "Technomancer Inc.",
-    role: "Frontend Developer Intern",
+    role: "Web Developer Intern",
     location: "Manila, PH",
     period: "Jul 2025 – Sep 2025",
     description:
-      "Contributed to multiple client-facing projects by implementing frontend updates and improving team collaboration workflows.",
+      "Supported development and deployment of multiple client websites while improving collaboration workflows across teams.",
     highlights: [
-      "Applied Git and Bitbucket workflows with Jira integration to improve collaboration across 10+ active projects",
-      "Implemented responsive updates and tested features across multiple client websites, with 5 projects deployed live",
+      "Managed version control and project workflows using Git, Bitbucket, and Jira across 10+ active projects with SSH-based environments",
+      "Developed and maintained responsive features for 5 live Laravel-based client websites, ensuring cross-device compatibility",
     ],
-    tools: ["Git", "Bitbucket", "Jira", "SSH", "HTML", "CSS", "JavaScript"],
+    tools: ["Git", "Bitbucket", "Jira", "SSH", "Laravel", "HTML", "CSS", "JavaScript"],
     accent: "#2563eb",
   },
   {
@@ -43,12 +44,12 @@ const experiences = [
     location: "Manila, PH",
     period: "Mar 2025 – Jun 2025",
     description:
-      "Focused on product design and developer handoff by creating clear user flows and translating designs into usable components.",
+      "Designed product systems and worked closely with developers to translate UX decisions into production-ready components.",
     highlights: [
-      "Designed a ticketing and project management system in Figma within 3 weeks, emphasizing clean user flows",
-      "Collaborated with developers to translate designs into functional frontend components using ShadCN",
+      "Designed a ticketing and project management system in Figma within a 3-week sprint, focusing on efficient user flows",
+      "Collaborated with engineers to convert high-fidelity designs into functional components using ShadCN UI and open-source libraries",
     ],
-    tools: ["Figma", "ShadCN", "Design Systems", "UX Research"],
+    tools: ["Figma", "ShadCN UI", "Design Systems", "UX Research"],
     accent: "#06b6d4",
   },
   {
@@ -57,12 +58,12 @@ const experiences = [
     location: "Manila, PH",
     period: "Oct 2023 – Oct 2025",
     description:
-      "Led design initiatives and mentorship programs to improve accessibility, onboarding, and design consistency across the org.",
+      "Led UI/UX initiatives, improving accessibility, onboarding, and design consistency for a growing tech community.",
     highlights: [
-      "Led the redesign of the club website and created a scalable UI/UX roadmap for 200+ members",
-      "Conducted Figma workshops and UX talks, mentoring 50+ peers and standardizing design practices",
+      "Directed a full website redesign and established a scalable UI/UX roadmap for 200+ members",
+      "Facilitated Figma workshops and UX sessions for 50+ peers, standardizing design systems and component usage",
     ],
-    tools: ["Figma", "UI/UX Strategy", "Accessibility", "Design Leadership"],
+    tools: ["Figma", "UI/UX Strategy", "Accessibility", "Design Systems"],
     accent: "#a78bfa",
   },
 ]
@@ -120,7 +121,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
       className="about-mono mb-3 text-xs font-medium tracking-[0.22em] uppercase"
       style={{ color: "#a78bfa" }}
     >
-      // {children}
+      {children}
     </p>
   )
 }
@@ -155,7 +156,6 @@ function SkillPill({ label, color, delay }: { label: string; color: string; dela
 // ── Experience card ───────────────────────────────────────────────────────────
 function ExpCard({ exp, index }: { exp: typeof experiences[0]; index: number }) {
   const { ref, visible } = useReveal(0.1)
-  const [expanded, setExpanded] = useState(false)
 
   return (
     <div
@@ -188,7 +188,6 @@ function ExpCard({ exp, index }: { exp: typeof experiences[0]; index: number }) 
           el.style.borderColor = "rgba(124,58,237,0.18)"
           el.style.boxShadow = "none"
         }}
-        onClick={() => setExpanded((v) => !v)}
       >
         {/* Accent line */}
         <div
@@ -241,13 +240,7 @@ function ExpCard({ exp, index }: { exp: typeof experiences[0]; index: number }) 
         </p>
 
         {/* Expandable highlights */}
-        <div
-          style={{
-            overflow: "hidden",
-            maxHeight: expanded ? "400px" : "0",
-            transition: "max-height 0.45s cubic-bezier(0.4,0,0.2,1)",
-          }}
-        >
+        <div style={{ marginTop: "16px" }}>
           <ul style={{ marginTop: "16px", display: "flex", flexDirection: "column", gap: "8px" }}>
             {exp.highlights.map((h, i) => (
               <li
@@ -286,18 +279,6 @@ function ExpCard({ exp, index }: { exp: typeof experiences[0]; index: number }) 
               {t}
             </span>
           ))}
-        </div>
-
-        {/* Toggle hint */}
-        <div
-          style={{
-            marginTop: "12px",
-            fontSize: "0.68rem",
-            color: "rgba(167,139,250,0.35)",
-            fontFamily: "'DM Mono', monospace",
-          }}
-        >
-          {expanded ? "[ collapse ]" : "[ expand highlights ]"}
         </div>
       </div>
     </div>
@@ -526,10 +507,10 @@ export function AboutSection() {
 
               <div className="about-mono" style={{ fontSize: "0.88rem", lineHeight: 1.75, color: "rgba(196,181,253,0.6)" }}>
                 <p style={{ marginBottom: "14px" }}>
-                  I'm <strong style={{ color: "#e9d5ff" }}>Nathalia</strong>, a multidisciplinary designer and developer passionate about creating digital experiences that are both beautiful and functional. I specialize in user-centered products that combine UI/UX design, frontend development, AI integration, and cloud services.
+                  I'm <strong style={{ color: "#c4b5fd" }}>Nathalia</strong>, a multidisciplinary designer and developer passionate about creating digital experiences that are both beautiful and functional. I specialize in the intersection of AI-native logic and high-fidelity user experience.
                 </p>
                 <p style={{ marginBottom: "14px" }}>
-                  My experience spans <strong style={{ color: "#c4b5fd" }}>web and mobile applications</strong>, from designing responsive interfaces to building frontend components and integrating AI solutions. As <strong style={{ color: "#c4b5fd" }}>UI/UX Lead at AWS Cloud Club PUP Manila</strong>, I guide projects from concept to implementation and mentor peers.
+                  My experience spans <strong style={{ color: "#e9d5ff" }}>Product Design, Web Development,</strong> and <strong style={{ color: "#e9d5ff"  }}>DevOps</strong>. Whether I’m architecting AI-enhanced systems or leading UI/UX roadmaps, I bridge the gap between complex technical constraints and seamless digital interfaces.
                 </p>
                 <p>
                   Outside of work, I enjoy hackathons, collaborative tech projects, and creative pursuits like graphic design, photography, and video editing.
@@ -544,7 +525,6 @@ export function AboutSection() {
                   rel="noopener noreferrer"
                   className="about-dl-btn"
                 >
-                  <Download size={15} />
                   <span>Download Resume</span>
                 </Link>
               </div>
@@ -662,7 +642,7 @@ export function AboutSection() {
             </h3>
 
             {/* Vertical timeline */}
-            <div style={{ position: "relative", paddingLeft: "36px" }}>
+            <div style={{ position: "relative", paddingLeft: "30px" }}>
               {/* Line */}
               <div
                 style={{

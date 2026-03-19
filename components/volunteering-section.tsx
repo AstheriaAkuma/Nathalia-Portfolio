@@ -379,7 +379,7 @@ export function VolunteeringSection() {
               className="vol-mono"
               style={{ color: "#a78bfa", fontSize: "0.72rem", letterSpacing: "0.22em", textTransform: "uppercase", marginBottom: "12px" }}
             >
-              // Community &amp; Impact
+              Community &amp; Impact
             </p>
             <h2
               className="vol-title"

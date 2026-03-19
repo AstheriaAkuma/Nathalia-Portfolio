@@ -12,23 +12,55 @@ const projects = [
   {
     id: "1",
     title: "AWS Cloud Club PUP",
+    link: "https://www.awsccpup.cloud/",
     subtitle: "Official Website",
-    description: "Official community platform designed with a high-energy 'Galaxy' aesthetic to centralize resources and drive student engagement.",
-    fullDescription: `The official digital hub for AWS Cloud Club - PUP Manila, designed to centralize event information and community resources.\n\nAs Lead UI/UX Designer, I owned the end-to-end design process, from translating AWS global brand guidelines into a local "Galaxy" theme to prototyping high-fidelity interactions.\n\n→ Implemented a "Galaxy/Cyber" aesthetic using deep violets and glow effects to mirror the futuristic nature of cloud technology.\n→ Integrated purposeful animations and "bloom" effects to increase dwell time and encourage exploration.\n→ Structured the homepage to prioritize "Upcoming Events," reducing friction for user registration.`,
+    description: "A redesigned community platform focused on increasing engagement, event participation, and member onboarding through functional UX.",
+    fullDescription: `This project is a full redesign of the AWS Cloud Club PUP official website. The previous version primarily focused on presenting information about the organization, but lacked functional depth—resulting in low repeat visits and minimal user interaction.
+
+    The goal of the redesign was to transform the website from a static informational page into an interactive platform that supports both engagement and operations.
+
+    As Lead UI/UX Designer, I led the end-to-end design process—from identifying usability gaps to implementing a system that supports real user actions.
+
+    Key improvements include:
+    - Introduced an integrated application flow, allowing interested students to apply directly through the website instead of external channels.
+    - Designed structured sections for events, programs, and the Skill Builder department to clearly communicate the club’s value.
+    - Implemented an ID Finder system to streamline member verification during both onsite and virtual events.
+    - Reworked information architecture to prioritize “what users can do” rather than “what the organization is.”
+
+    Despite these functional changes, the visual identity remained consistent with AWS Cloud Club’s “Galaxy” branding—leveraging deep violets, glow effects, and immersive visuals to maintain brand recognition.
+
+    Outcome:
+    The redesign shifted the platform from passive viewing to active participation—supporting recruitment, improving accessibility to resources, and encouraging repeated engagement with the community.`,
     tags: ["UI/UX Design"],
     image: "/aws-cloud-club-pup2.jpg",
     year: "2024",
     role: "Lead UI/UX Designer",
     tools: ["Figma", "Branding", "Prototyping"],
     accent: "#7c3aed",
-    size: "large", // large card in bento
+    size: "large", 
   },
   {
     id: "2",
     title: "AWS Student Community Day",
+    link: "https://scdmm.awscloudclubs.ph/",
     subtitle: "Philippines 2025",
-    description: "Frontend implementation for a global-scale tech summit, prioritizing performance, accessibility, and fluid responsiveness.",
-    fullDescription: `A high-traffic event landing page for the first major AWS Cloud Club summit globally, requiring high performance and cross-device reliability.\n\nAs the Frontend Developer, I was responsible for the technical implementation, focusing on responsiveness, asset optimization, and accessibility.\n\n→ Leveraged Next.js for server-side rendering to ensure fast load times critical for mobile users.\n→ Implemented a fluid grid system to ensure the complex event schedule remained legible on all devices.\n→ Maintained a strict GitHub workflow ensuring zero broken links and consistent styling.`,
+    description: "A high-traffic event platform built for scalability, responsiveness, and cross-team collaboration across a nationwide organization.",
+    fullDescription: `AWS Student Community Day Philippines is a nationwide event organized by AWS Cloud Clubs across the country, requiring a centralized platform capable of handling high traffic and diverse user access.
+
+    As a Frontend Developer, I was responsible for implementing the interface using Next.js, React, and Tailwind CSS, with a focus on responsiveness, performance, and quality assurance.
+
+    This project required constant coordination across multiple teams—including organizers, developers, and UI/UX designers—to ensure consistency in branding and content delivery.
+
+    Key contributions include:
+    - Developed responsive layouts to ensure accessibility across devices, particularly for mobile users.
+    - Maintained content accuracy and structure, ensuring all event details, schedules, and assets were properly integrated.
+    - Conducted quality assurance checks to prevent broken links, layout inconsistencies, and missing resources.
+    - Collaborated closely with designers to adjust UI components based on real-time requirements and constraints.
+
+    A major challenge in this project was aligning multiple contributors under a unified system while maintaining speed and quality.
+
+    Outcome:
+    The platform successfully supported a large-scale event, delivering a smooth user experience while maintaining visual consistency and technical reliability across devices.`,
     tags: ["Frontend Development"],
     image: "/aws-student-day2.jpg",
     year: "2024",
@@ -40,9 +72,25 @@ const projects = [
   {
     id: "3",
     title: "Arduino Day Philippines 2025",
+    link: "https://www.arduinodayphilippines.cc/",
     subtitle: "National Tech Event Website",
-    description: "Establishing a foundational digital presence for a national hardware event, focusing on content clarity and navigation.",
-    fullDescription: `The digital face of Arduino Day Philippines, celebrating open-source hardware and local innovation.\n\nAs the UI/UX Designer, I focused on establishing a clear visual hierarchy that balanced technical documentation with community celebration.\n\n→ Opted for a "direct-to-point" layout emphasizing event tracks and speaker lineups without visual clutter.\n→ Worked closely with team members to ensure iconography stayed true to the Arduino ecosystem.\n→ Designed modular systems for event cards to ensure the site was easy to update as speakers were confirmed.`,
+    description: "A clean, hardware-focused interface designed to communicate event details clearly while staying true to Arduino’s branding.",
+    fullDescription: `Arduino Day Philippines is a nationwide event celebrating open-source hardware and innovation. The website serves as the primary platform for communicating event details, registration, and program flow.
+
+    As a UI/UX Designer, my role focused on building a consistent design system and designing key sections of the website in collaboration with developers.
+
+    The design approach emphasized clarity, accessibility, and alignment with Arduino’s established visual identity.
+
+    Key contributions include:
+    - Developed a design system based on Arduino’s branding—featuring green tones, clean layouts, and minimal visual noise.
+    - Designed key pages highlighting event information such as location maps, registration flow, and event timelines.
+    - Structured content to ensure users can quickly understand what the event is, where it takes place, and how to participate.
+    - Collaborated with developers to ensure accurate implementation of design components.
+
+    Unlike more experimental designs, this project prioritized usability and direct communication—ensuring that both technical and non-technical audiences could navigate the platform بسهولة.
+
+    Outcome:
+    The final design provided a clear and structured user experience, making event information easily accessible while reinforcing Arduino’s brand identity.`,
     tags: ["UI/UX Design"],
     image: "/arduino-day-philippines2.jpg",
     year: "2025",
@@ -53,10 +101,29 @@ const projects = [
   },
   {
     id: "4",
-    title: "Zen",
-    subtitle: "Student Productivity App",
-    description: "A Gen Z-focused productivity tool designed to combat academic burnout through emotional design and calming aesthetics.",
-    fullDescription: `Zen is a student productivity app developed over a 2-week sprint to help students manage tasks and focus without stress.\n\nAs the UI/UX Designer and Frontend Developer, I handled product strategy and visual design, choosing a palette of cosmic blues and violets to induce "Calm Focus."\n\n→ Playful galaxy theme to make productivity feel less like work.\n→ Mirrored familiar UX patterns (like Instagram-style story wrap-ups) to make the learning curve near-zero.\n→ Integrated focus timers and weekly productivity summaries to keep students energized.`,
+    title: "Zen [2nd Place]",
+    link: "https://www.linkedin.com/posts/nathalia-angela-mancilla-807853287_we-just-wrapped-up-the-iseac-2025-hackathon-activity-7301858811428945921-4VTz",
+    subtitle: "ISEAC Hackathon Project",
+    description: "A goal-oriented productivity platform designed to address short attention spans through personalization, progress tracking, and behavioral design.",
+    fullDescription: `Zen is a productivity application developed during a hackathon focused on solving challenges in education, AI, and cybersecurity.
+
+    The problem we addressed was the increasing difficulty of students to maintain focus for extended periods—often linked to shorter attention spans influenced by digital environments and constant stimuli (e.g., social media usage patterns and rapid content consumption).
+
+    Our approach was to design a system that encourages consistency through motivation, personalization, and visible progress.
+
+    As a UI/UX Designer and Frontend Developer, I contributed to both product strategy and implementation.
+
+    Key features include:
+    - A goal-oriented dashboard that tracks study progress across daily, weekly, and monthly intervals.
+    - Personalized study scheduling, allowing users to define preferred study hours visualized through a “progress ring” system.
+    - Integration of the Pomodoro technique to support structured focus sessions.
+    - AI-powered note-taking to assist in summarizing and organizing study materials.
+    - “AI Study Wrapped” — inspired by Spotify Wrapped — providing users with a visual summary of their study habits to encourage continued engagement.
+
+    This approach combines behavioral design with familiar interaction patterns to reduce friction and improve retention.
+
+    Outcome:
+    The project placed 2nd in the competition, demonstrating strong alignment between problem identification, solution design, and user experience execution.`,
     tags: ["UI/UX Design", "Frontend Development"],
     image: "/zen.jpg",
     year: "2024",
@@ -160,19 +227,72 @@ function ProjectModal({ project, onClose }: { project: typeof projects[0]; onClo
           </div>
 
           <h3 className="fw-title" style={{ fontSize: "1.7rem", fontWeight: 800, color: "#f0ecff", lineHeight: 1.15, marginBottom: "4px" }}>{project.title}</h3>
-          <p style={{ fontSize: "0.85rem", color: project.accent, fontWeight: 500, marginBottom: "20px" }}>{project.role}</p>
-
+          <p style={{ fontSize: "0.85rem", color: project.accent, fontWeight: 500,marginBottom: "5px" }}>{project.role}</p>
           {/* Body */}
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "20px"}}>
+            {project.tools.map((t) => (
+              <span
+                key={t}
+                className="fw-mono"
+                style={{
+                  fontSize: "0.68rem",
+                  padding: "5px 12px",
+                  borderRadius: "999px",
+                  border: `1px solid ${project.accent}30`,
+                  color: `${project.accent}cc`,
+                  background: `${project.accent}10`,
+                  letterSpacing: "0.05em",
+                }}
+              >
+                {t}
+              </span>
+            ))}
+          </div>
           <div className="fw-mono" style={{ fontSize: "0.82rem", color: "rgba(196,181,253,0.6)", lineHeight: 1.75, whiteSpace: "pre-line", marginBottom: "24px" }}>
             {project.fullDescription}
           </div>
+          
+          {project.link && (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "8px",
+                marginTop: "10px",
+                fontSize: "0.75rem",
+                letterSpacing: "0.08em",
+                color: project.accent,
+                border: `1px solid ${project.accent}40`,
+                padding: "10px 16px",
+                borderRadius: "999px",
+                textDecoration: "none",
+                transition: "all 0.25s ease",
+              }}
+              onMouseEnter={(e) => {
+                const el = e.currentTarget as HTMLElement
+                el.style.background = `${project.accent}20`
+                el.style.boxShadow = `0 0 20px ${project.accent}30`
+              }}
+              onMouseLeave={(e) => {
+                const el = e.currentTarget as HTMLElement
+                el.style.background = "transparent"
+                el.style.boxShadow = "none"
+              }}
+            >
+              {project.link.includes("linkedin") ? "View Case Study" : "View Live Site"}
+              <ExternalLink size={14} />
+            </a>
+          )}
 
-          {/* Tools */}
+          {/* Tools
           <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
             {project.tools.map((t) => (
               <span key={t} className="fw-mono" style={{ fontSize: "0.68rem", padding: "4px 12px", borderRadius: "999px", border: `1px solid ${project.accent}35`, color: `${project.accent}cc`, letterSpacing: "0.05em" }}>{t}</span>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
@@ -250,13 +370,6 @@ function ProjectCard({
 
         {/* Corner glow */}
         <div style={{ position: "absolute", top: "-40px", right: "-40px", width: "160px", height: "160px", borderRadius: "50%", background: `radial-gradient(circle, ${project.accent}35 0%, transparent 65%)`, pointerEvents: "none" }} />
-
-        {/* Top meta */}
-        <div style={{ position: "absolute", top: "18px", left: "18px", display: "flex", gap: "8px", flexWrap: "wrap" }}>
-          {project.tags.map((t) => (
-            <span key={t} className="fw-mono" style={{ fontSize: "0.6rem", letterSpacing: "0.16em", textTransform: "uppercase", color: project.accent, background: "rgba(4,3,10,0.75)", border: `1px solid ${project.accent}40`, padding: "3px 10px", borderRadius: "999px", backdropFilter: "blur(6px)" }}>{t}</span>
-          ))}
-        </div>
 
         {/* Top-right year */}
         <div style={{ position: "absolute", top: "18px", right: "18px" }}>
@@ -396,7 +509,7 @@ export function FeaturedWork() {
             }}
           >
             <p className="fw-mono" style={{ color: "#a78bfa", fontSize: "0.72rem", letterSpacing: "0.22em", textTransform: "uppercase", marginBottom: "12px" }}>
-              // Portfolio
+              Portfolio
             </p>
             <h2
               className="fw-title"

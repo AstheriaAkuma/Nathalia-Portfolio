@@ -333,7 +333,7 @@ export function ContactSection() {
 
               {/* Label */}
               <p className="contact-mono" style={{ color: "#a78bfa", fontSize: "0.7rem", letterSpacing: "0.22em", textTransform: "uppercase", marginBottom: "20px" }}>
-                // Get In Touch
+                Get In Touch
               </p>
 
               {/* Heading */}
@@ -353,8 +353,8 @@ export function ContactSection() {
               </h2>
 
               {/* Sub */}
-              <p className="contact-mono" style={{ fontSize: "0.88rem", color: "rgba(196,181,253,0.55)", maxWidth: "460px", margin: "0 auto 36px", lineHeight: 1.75 }}>
-                Have a project in mind or just want to chat about design and development? I'd love to hear from you.
+              <p className="contact-mono" style={{ fontSize: "0.88rem", color: "rgba(196,181,253,0.55)", maxWidth: "600px", margin: "0 auto 36px", lineHeight: 1.75 }}>
+                From high-fidelity prototypes to production-ready code, I’m always open to discussing design systems, Generative AI, or your next big project.
               </p>
 
               {/* Email CTA */}
@@ -388,8 +388,7 @@ export function ContactSection() {
             }}
           >
             <p className="contact-mono" style={{ fontSize: "0.72rem", color: "rgba(167,139,250,0.35)", letterSpacing: "0.1em" }}>
-              <span className="contact-status-dot" />
-              currently open to freelance projects and full-time opportunities
+              © 2026 Nathalia's Portfolio - Built with Next.js
             </p>
           </div>
 

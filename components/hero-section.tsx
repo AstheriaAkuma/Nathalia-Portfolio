@@ -54,7 +54,7 @@ function CosmicCanvas() {
     }
 
     const initStars = () => {
-      starsRef.current = Array.from({ length: 220 }, (_, i) => ({
+      starsRef.current = Array.from({ length: 20 }, (_, i) => ({
         id: i,
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -482,29 +482,12 @@ export function HeroSection() {
       <section
         id="hero"
         className="relative min-h-screen flex flex-col items-center justify-center pt-24"
-        style={{ background: "#04030a" }}
       >
         {/* Canvas starfield */}
         <CosmicCanvas />
 
         {/* Orbit decoration */}
         <OrbitRings />
-
-        {/* Central deep nebula */}
-        <div
-          className="absolute"
-          style={{
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%,-50%)",
-            width: "700px",
-            height: "700px",
-            background: "radial-gradient(ellipse, rgba(89,29,169,0.22) 0%, rgba(12,5,36,0) 70%)",
-            borderRadius: "50%",
-            zIndex: 1,
-            animation: "glowPulse 6s ease infinite",
-          }}
-        />
 
         {/* Content */}
         <div
@@ -520,14 +503,14 @@ export function HeroSection() {
               transition: "opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s",
             }}
           >
-            <RoleBadge text="Available for work · 2025" />
+            <RoleBadge text="Available for work" />
           </div>
 
           {/* Name */}
           <h1
             className="hero-title mt-7 mb-2"
             style={{
-              fontSize: "clamp(3rem, 10vw, 7.5rem)",
+              fontSize: "clamp(3rem, 10vw, 5.5rem)",
               fontWeight: 800,
               color: "#f0ecff",
               lineHeight: 1.0,
