@@ -132,6 +132,51 @@ const projects = [
     accent: "#a78bfa",
     size: "large",
   },
+  {
+  id: "2",
+  title: "BidChain PH — ROPA Auction Portal",
+  link: "https://bidchain-stellar.vercel.app/",
+  subtitle: "Blockchain-Powered Foreclosure Auction Platform",
+  description: "A transparent on-chain bidding system for foreclosed properties in the Philippines that removes manager’s checks, reduces refund delays, and verifies auction results through smart contracts.",
+  fullDescription: `BidChain PH is a blockchain-based prototype that reimagines how foreclosed property auctions (ROPA) could operate in the Philippines.
+
+Traditional bank foreclosure auctions require bidders to submit a physical manager’s check and wait weeks to recover their deposit if they lose. This creates a liquidity problem for ordinary buyers and limits participation in affordable housing opportunities.
+
+BidChain PH addresses this by moving the auction process on-chain using the Stellar blockchain and Soroban smart contracts.
+
+Instead of relying on manual bank processes, bidders can connect a crypto wallet, place bids digitally, and have their deposits automatically managed by a smart contract escrow. The system ensures that funds are securely locked during the auction and refunded instantly to losing bidders once the auction is finalized.
+
+Key features include:
+
+- Wallet-based bidding through the Freighter browser extension, eliminating the need for physical manager’s checks.
+- On-chain escrow using Soroban smart contracts to securely hold bid deposits during the auction.
+- Transparent auction finalization where the winning bid is recorded and verifiable on the Stellar blockchain.
+- Automated refund system allowing losing bidders to reclaim their deposits directly from the dashboard.
+- Public transaction records that provide verifiable proof of bids and auction results.
+
+The platform includes both bidder-facing and administrative tools.
+
+Bidders can browse property listings, place bids, track deposits, and claim refunds from a personal dashboard. Meanwhile, administrators can finalize auctions through a dedicated panel that interacts directly with the deployed smart contract.
+
+Architecture Overview:
+
+The frontend is built with Next.js and Tailwind, providing a responsive interface for browsing auctions and submitting bids. Transactions are signed locally through the Freighter wallet extension, ensuring that private keys never leave the user's device.
+
+Once a transaction is signed, it is sent to the Stellar Testnet where a Soroban smart contract manages the auction logic—including bid placement, escrow deposits, auction finalization, and refunds.
+
+This prototype demonstrates how blockchain technology can increase transparency, improve liquidity for bidders, and reduce administrative overhead in property auction systems.
+
+Outcome:
+
+BidChain PH showcases how decentralized infrastructure can modernize legacy auction processes by replacing opaque manual workflows with verifiable smart contract logic. The system highlights the potential for blockchain to enable more accessible and transparent property markets.`,
+  tags: ["Blockchain", "Full Stack Development", "Web3"],
+  image: "/bidchain-stellar.png",
+  year: "2026",
+  role: "Full Stack Developer",
+  tools: ["Next.js", "Tailwind CSS", "Rust", "Soroban", "Stellar", "Freighter Wallet"],
+  accent: "#0ea5e9",
+  size: "large",
+}
 ]
 
 // ── Hooks ─────────────────────────────────────────────────────────────────────
