@@ -516,18 +516,6 @@ export function AboutSection() {
                   Outside of work, I enjoy hackathons, collaborative tech projects, and creative pursuits like graphic design, photography, and video editing.
                 </p>
               </div>
-
-              <div style={{ marginTop: "32px" }}>
-                <Link
-                  href="/Resume_MANCILLA.pdf"
-                  download
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="about-dl-btn"
-                >
-                  <span>Download Resume</span>
-                </Link>
-              </div>
             </div>
 
             {/* Photo */}

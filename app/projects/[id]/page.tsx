@@ -52,6 +52,36 @@ const projects = [
     role: "UI/UX Designer & Frontend Developer",
     tools: ["Figma", "React", "Tailwind CSS"],
     link: "https://www.linkedin.com/posts/nathalia-angela-mancilla-807853287_we-just-wrapped-up-the-iseac-2025-hackathon-activity-7301858811428945921-4VTz"
+  },
+  {
+    id: "6",
+    title: "NegosyoNav",
+    description: "A mobile-first PWA guiding Filipino micro-entrepreneurs through Manila City's business registration via a Taglish AI chatbot and auto-filled government PDF forms.",
+    fullDescription: `NegosyoNav is a mobile-first Progressive Web App built for Innolympics 2026 (GDGoC PLM Hackathon) that simplifies the business registration process for Filipino micro-entrepreneurs in Manila City.
+
+First-time business owners must navigate five separate government agencies—DTI, Barangay, BIR, Mayor's Permit, and Cedula—each with their own requirements, fees, and office hours. The opacity of this process discourages many from ever formalizing their businesses.
+
+As UI/UX Designer and Full Stack Developer, I contributed to both the product experience and its technical implementation across the entire stack.
+
+Key features include:
+- Lakad Roadmap: A personalized 5-step timeline with costs, requirements, office hours, and embedded Google Maps per agency.
+- Form Auto-Fill & PDF Generation: A chat-to-PDF pipeline extracting profile data from conversation and pre-filling official government forms via AcroForm.
+- Grant Matching: Identifies eligibility for programs offering up to ₱1 million in funding.
+- Negosyante Hub: Community board for entrepreneurs to share tips and experiences.
+- Place Finder: Google Maps integration with live directions to relevant government offices.
+- Renewal Calendar: Tracks annual renewal deadlines and estimates completion time.
+
+The frontend uses React 19 and shadcn/ui with Tailwind v4. The backend runs Express with tRPC for end-to-end type safety. Firebase Firestore handles data, and pdf-lib fills 30+ named fields on actual government AcroForm templates.
+
+The "Bayanihan Modernism" design system—warm-cream backgrounds, teal-to-blue gradients, and Filipino-language microcopy—gives the app a distinctly local feel.
+
+Outcome: Shipped with 56 passing tests, a functional chat-to-PDF pipeline, and a complete registration roadmap validated with real Manila City data.`,
+    tags: ["Full Stack Development"],
+    image: "/negosyonav.png",
+    year: "2026",
+    role: "UI/UX Designer & Full Stack Developer",
+    tools: ["React 19", "Express", "tRPC", "Firebase", "Gemini AI", "Google Maps API", "pdf-lib", "Tailwind CSS"],
+    link: "https://negosyo-nav.vercel.app/"
   }
 ]
 
