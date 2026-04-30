@@ -133,7 +133,7 @@ const projects = [
     size: "large",
   },
   {
-  id: "2",
+  id: "5",
   title: "BidChain PH — ROPA Auction Portal",
   link: "https://bidchain-stellar.vercel.app/",
   subtitle: "Blockchain-Powered Foreclosure Auction Platform",
@@ -176,7 +176,47 @@ BidChain PH showcases how decentralized infrastructure can modernize legacy auct
   tools: ["Next.js", "Tailwind CSS", "Rust", "Soroban", "Stellar", "Freighter Wallet"],
   accent: "#0ea5e9",
   size: "large",
-}
+},
+  {
+    id: "6",
+    title: "NegosyoNav",
+    link: "https://negosyo-nav.vercel.app/",
+    subtitle: "Innolympics 2026 · GDGoC PLM Hackathon",
+    description: "A mobile-first PWA that guides Filipino micro-entrepreneurs through Manila City's business registration using a Taglish AI chatbot and auto-filled government PDF forms.",
+    fullDescription: `NegosyoNav is a mobile-first Progressive Web App built for Innolympics 2026 (GDGoC PLM Hackathon) that simplifies the business registration process for Filipino micro-entrepreneurs in Manila City.
+
+The problem: First-time business owners must navigate five separate government agencies—DTI, Barangay, BIR, Mayor's Permit, and Cedula—each with their own requirements, fees, and office hours. The process is opaque and often discourages people from formalizing their businesses.
+
+Our solution centers on a Taglish AI chatbot powered by Gemini 2.0 Flash that gathers user information through natural conversation—the way a real kababayan would walk you through it.
+
+Key features include:
+
+- Lakad Roadmap: A personalized 5-step registration timeline with costs, requirements, office hours, and embedded Google Maps for each agency.
+- Form Auto-Fill & PDF Generation: A chat-to-PDF pipeline that extracts profile data from conversation and pre-fills official government forms (Barangay Clearance, DTI, BIR 1901) using AcroForm.
+- Grant Matching: Identifies eligibility for funding programs offering up to ₱1 million.
+- Negosyante Hub: A community board for entrepreneurs to share tips and experiences.
+- Place Finder: Google Maps integration showing nearby government offices with live directions.
+- Renewal Calendar: Tracks annual renewal deadlines and estimates completion time.
+
+Architecture:
+
+The frontend is built with React 19 and shadcn/ui styled with Tailwind v4. The backend uses Express with tRPC for end-to-end type safety—eliminating a separate REST layer. Firebase Firestore handles real-time data, and PDF generation uses pdf-lib with AcroForm support to fill 30+ named fields on actual government templates.
+
+Design System:
+
+"Bayanihan Modernism"—warm-cream backgrounds, teal-to-blue gradients, and Filipino-language microcopy throughout the interface.
+
+Outcome:
+
+Shipped with 56 passing tests covering chat persistence and profile extraction logic, a fully functional chat-to-PDF pipeline, and a complete multi-step registration roadmap validated with real Manila City data.`,
+    tags: ["Full Stack Development"],
+    image: "/negosyonav.png",
+    year: "2026",
+    role: "UI/UX Designer & Full Stack Developer",
+    tools: ["React 19", "Express", "tRPC", "Firebase", "Gemini AI", "Google Maps API", "pdf-lib", "Tailwind CSS"],
+    accent: "#0d9488",
+    size: "normal",
+  },
 ]
 
 // ── Hooks ─────────────────────────────────────────────────────────────────────
