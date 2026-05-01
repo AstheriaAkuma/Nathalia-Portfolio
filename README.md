@@ -1,6 +1,5 @@
-# Nathalia's Portfolio
-
-Personal portfolio site for Nathalia Mancilla — UI/UX Designer, Frontend Developer, and AI Developer.
+# Nathalia Portfolio Site
+<img width="2176" height="1698" alt="nathalia-portfolio vercel app_ (3)" src="https://github.com/user-attachments/assets/180a0bcf-b8cc-4007-a5b9-40a2b1c7ca5b" />
 
 ## Stack
 
