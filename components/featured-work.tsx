@@ -39,7 +39,7 @@ Outcome:
 
 NegosyoNav won the Para sa Bayan track at Innolympics 2026, hosted by GDGoC PLM. The project shipped with 56 passing tests covering chat persistence and profile extraction logic, a fully functional chat-to-PDF pipeline, and a complete multi-step registration roadmap validated with real Manila City data.`,
     tags: ["Full Stack Development"],
-    image: "/negosyonav.png",
+    image: "/negosyonavV2.png",
     year: "2026",
     role: "UI/UX Designer & Full Stack Developer",
     tools: ["React 19", "Express", "tRPC", "Firebase", "Gemini AI", "Google Maps API", "pdf-lib", "Tailwind CSS"],
