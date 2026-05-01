@@ -77,7 +77,7 @@ The "Bayanihan Modernism" design system—warm-cream backgrounds, teal-to-blue g
 
 Outcome: Shipped with 56 passing tests, a functional chat-to-PDF pipeline, and a complete registration roadmap validated with real Manila City data.`,
     tags: ["Full Stack Development"],
-    image: "/negosyonav.png",
+    image: "/negosyonavV2.png",
     year: "2026",
     role: "UI/UX Designer & Full Stack Developer",
     tools: ["React 19", "Express", "tRPC", "Firebase", "Gemini AI", "Google Maps API", "pdf-lib", "Tailwind CSS"],

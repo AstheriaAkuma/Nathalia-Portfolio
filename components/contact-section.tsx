@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { Mail, Linkedin, Github, ArrowUpRight, Send } from "lucide-react"
+import { Mail, Linkedin, Github, ArrowUpRight } from "lucide-react"
 
 // ── Data ──────────────────────────────────────────────────────────────────────
 
