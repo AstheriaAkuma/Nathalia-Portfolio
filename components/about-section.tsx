@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState, useEffect, useRef } from "react"
-import { Download, MapPin, ChevronRight } from "lucide-react"
+import { MapPin, ChevronRight } from "lucide-react"
 import { Palette, Code2, Wrench, Sparkles } from "lucide-react"
 
 // ── Data ──────────────────────────────────────────────────────────────────────

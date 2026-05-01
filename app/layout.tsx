@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     "Portfolio of Nathalia - Product Designer, Developer, and AI Developer. Bold design choices, grounded in usability.",
   keywords: ["UI/UX Designer", "Product Designer", "Developer", "Portfolio", "AI Developer"],
   authors: [{ name: "Nathalia" }],
+  icons: {
+    icon: "/nathalia-logo.png",
+  },
 }
 
 export const viewport: Viewport = {

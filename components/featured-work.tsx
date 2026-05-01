@@ -39,7 +39,7 @@ Outcome:
 
 NegosyoNav won the Para sa Bayan track at Innolympics 2026, hosted by GDGoC PLM. The project shipped with 56 passing tests covering chat persistence and profile extraction logic, a fully functional chat-to-PDF pipeline, and a complete multi-step registration roadmap validated with real Manila City data.`,
     tags: ["Full Stack Development"],
-    image: "/negosyonav.png",
+    image: "/negosyonavV2.png",
     year: "2026",
     role: "UI/UX Designer & Full Stack Developer",
     tools: ["React 19", "Express", "tRPC", "Firebase", "Gemini AI", "Google Maps API", "pdf-lib", "Tailwind CSS"],
@@ -258,6 +258,7 @@ function ProjectModal({ project, onClose }: { project: typeof projects[0]; onClo
       onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
     >
       <div
+        className="fw-modal-scroll"
         style={{
           position: "relative",
           background: "rgba(10,6,28,0.95)",
@@ -306,8 +307,44 @@ function ProjectModal({ project, onClose }: { project: typeof projects[0]; onClo
             <span className="fw-mono" style={{ fontSize: "0.62rem", letterSpacing: "0.1em", color: "rgba(196,181,253,0.4)", padding: "3px 10px" }}>{project.year}</span>
           </div>
 
-          <h3 className="fw-title" style={{ fontSize: "1.7rem", fontWeight: 800, color: "#f0ecff", lineHeight: 1.15, marginBottom: "4px" }}>{project.title}</h3>
-          <p style={{ fontSize: "0.85rem", color: project.accent, fontWeight: 500,marginBottom: "5px" }}>{project.role}</p>
+          <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: "16px", marginBottom: "4px" }}>
+            <h3 className="fw-title" style={{ fontSize: "1.7rem", fontWeight: 800, color: "#f0ecff", lineHeight: 1.15 }}>{project.title}</h3>
+            {project.link && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  flexShrink: 0,
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  fontSize: "0.75rem",
+                  letterSpacing: "0.08em",
+                  color: project.accent,
+                  border: `1px solid ${project.accent}40`,
+                  padding: "10px 16px",
+                  borderRadius: "999px",
+                  textDecoration: "none",
+                  transition: "all 0.25s ease",
+                }}
+                onMouseEnter={(e) => {
+                  const el = e.currentTarget as HTMLElement
+                  el.style.background = `${project.accent}20`
+                  el.style.boxShadow = `0 0 20px ${project.accent}30`
+                }}
+                onMouseLeave={(e) => {
+                  const el = e.currentTarget as HTMLElement
+                  el.style.background = "transparent"
+                  el.style.boxShadow = "none"
+                }}
+              >
+                {project.link.includes("linkedin") ? "View Case Study" : "View Live Site"}
+                <ExternalLink size={14} />
+              </a>
+            )}
+          </div>
+          <p style={{ fontSize: "0.85rem", color: project.accent, fontWeight: 500, marginBottom: "16px" }}>{project.role}</p>
           {/* Body */}
           <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "20px"}}>
             {project.tools.map((t) => (
@@ -331,41 +368,6 @@ function ProjectModal({ project, onClose }: { project: typeof projects[0]; onClo
           <div className="fw-mono" style={{ fontSize: "0.82rem", color: "rgba(196,181,253,0.6)", lineHeight: 1.75, whiteSpace: "pre-line", marginBottom: "24px" }}>
             {project.fullDescription}
           </div>
-          
-          {project.link && (
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "8px",
-                marginTop: "10px",
-                fontSize: "0.75rem",
-                letterSpacing: "0.08em",
-                color: project.accent,
-                border: `1px solid ${project.accent}40`,
-                padding: "10px 16px",
-                borderRadius: "999px",
-                textDecoration: "none",
-                transition: "all 0.25s ease",
-              }}
-              onMouseEnter={(e) => {
-                const el = e.currentTarget as HTMLElement
-                el.style.background = `${project.accent}20`
-                el.style.boxShadow = `0 0 20px ${project.accent}30`
-              }}
-              onMouseLeave={(e) => {
-                const el = e.currentTarget as HTMLElement
-                el.style.background = "transparent"
-                el.style.boxShadow = "none"
-              }}
-            >
-              {project.link.includes("linkedin") ? "View Case Study" : "View Live Site"}
-              <ExternalLink size={14} />
-            </a>
-          )}
 
           {/* Tools
           <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
@@ -584,6 +586,8 @@ export function FeaturedWork() {
           .fw-card-hero, .fw-card-medium, .fw-card-small { grid-column: span 1; }
           .fw-card-inner { height: 260px !important; }
         }
+        .fw-modal-scroll { scrollbar-width: none; -ms-overflow-style: none; }
+        .fw-modal-scroll::-webkit-scrollbar { display: none; }
       `}</style>
 
       <section id="projects" className="relative z-10 py-28 px-6">
